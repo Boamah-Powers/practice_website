@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+html{
+	/* Set height of the html page to 100% of the browser height */
+	height: 100%;
+	/* Hide horizontal scroll */
+	overflow-x: hidden;
+	font-family: 'Helvetica', sans-serif;
+}
+
+body{
+	/* Set height of the body to 100% -- separated out of html to allow scrollTo animation */
+	height: 100%;
+	margin: 0px;
+}
+
+h1 {
+	margin: 0px;
+	font-family: "Montserrat Medium";
+	max-width: 40ch;
+	text-align: center;
+	transform: scale(0.94);
+	animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+/* 
+Flower div inside Mountain section
+*/
+
+#campus-text{
+	color: white;
+    margin-top: 0px;
+    height: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* 
+Parallax: campus;
+*/
+#campus, #spot-1, #spot-2, #spot-3, #spot-4{
+	/* Set height of div to 100% */
+	height: 100%;
+	/* The bottom three background CSS settings create parallax effect */
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#campus {
+	background-image: url('images/new.jpg');
+}
+
+#spot-1 {
+	background-image: url('images/spot_1.png');
+}
+
+#spot-2 {
+	background-image: url('images/spot_2.png');
+}
+
+#spot-3 {
+	background-image: url('images/spot_3.png');
+}
+
+#spot-4 {
+	background-image: url('images/spot_4.png');
+}
+
+/*
+Text sections after Mountain and Ocean sections
+*/
+.text-section{
+	/* Center text in the middle of browser using flexbox */
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('images/so-white.png');
+	background-position: bottom;
+	animation: 10s linear 0s infinite bp;
+	box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.text{
+	width: 70%;
+}
+
+span {
+	font-size: 50px;
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+ @keyframes bp {
+	 from {
+		 background-position: 400px 0;
+	}
+	 to {
+		 background-position: 0 400px;
+	}
+}
