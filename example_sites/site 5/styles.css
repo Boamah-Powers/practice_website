@@ -1,0 +1,11 @@
+
+body {
+	/*background-color: rgba(245, 245, 220, 0);*/
+	background-image: url(https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700280938-optimized.jpg);
+}
+
+p, h1 {
+	color: navy;
+	text-align: center;
+	opacity: 1;
+}
